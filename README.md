@@ -1,4 +1,4 @@
-# TikTok Clean Mode 🎬
+# TikTok Clean Mode 
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-1.9.22-7F52FF?logo=kotlin&logoColor=white)
 ![Min SDK](https://img.shields.io/badge/Min%20SDK-26%20(Android%208.0)-brightgreen)
@@ -55,12 +55,12 @@ ACTION_CLICK is performed on the node → Clean mode ✓
 
 ## Features
 
-- 🔲 **Zero-root** — uses only public Android APIs
-- 🌍 **Multilingual** — recognises the "Clear display" button in 10+ languages
-- 🎯 **Targeted** — Accessibility Service listens only to TikTok packages (no battery drain)
-- 🖱️ **Draggable FAB** — the floating button snaps to either screen edge; stays out of the way
-- 🔄 **Live status** — setup screen updates permission indicators in real time
-- 📦 **No third-party SDKs** — only `androidx.core`, `appcompat`, and `material`
+-  **Zero-root** — uses only public Android APIs
+-  **Multilingual** — recognises the "Clear display" button in 10+ languages
+-  **Targeted** — Accessibility Service listens only to TikTok packages (no battery drain)
+-  **Draggable FAB** — the floating button snaps to either screen edge; stays out of the way
+-  **Live status** — setup screen updates permission indicators in real time
+-  **No third-party SDKs** — only `androidx.core`, `appcompat`, and `material`
 
 ---
 
