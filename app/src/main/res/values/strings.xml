@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TikTok Clean Mode</string>
+    <string name="app_description">One tap for a distraction-free, full-screen TikTok experience. No ads, no comments, no UI clutter.</string>
+
+    <!-- Accessibility service metadata (shown in Android Settings) -->
+    <string name="accessibility_service_label">TikTok Clean Mode Service</string>
+    <string name="accessibility_service_description">Enables the floating trigger button and automatically activates TikTok\'s built-in Clean Display mode with a single tap.</string>
+
+    <!-- Section heading -->
+    <string name="setup_steps">Required Setup — 2 steps</string>
+
+    <!-- Permission card: overlay -->
+    <string name="overlay_permission_title">Step 1 · Draw Over Other Apps</string>
+    <string name="overlay_permission_desc">Lets our floating trigger button appear on top of TikTok so you can activate clean mode without leaving the app.</string>
+
+    <!-- Permission card: accessibility -->
+    <string name="accessibility_permission_title">Step 2 · Accessibility Service</string>
+    <string name="accessibility_permission_desc">Allows the service to dispatch a long-press gesture and interact with TikTok\'s UI to enable clean display mode.</string>
+
+    <!-- Buttons -->
+    <string name="btn_grant_permission">Grant Permission</string>
+    <string name="btn_granted">Granted ✓</string>
+
+    <!-- Status labels -->
+    <string name="status_granted">Granted</string>
+    <string name="status_not_granted">Not granted</string>
+
+    <!-- All-set banner -->
+    <string name="all_permissions_granted">🎉 You\'re all set! Open TikTok — the floating button will appear on screen.</string>
+
+    <!-- Floating button accessibility -->
+    <string name="fab_description">Trigger TikTok Clean Mode</string>
+
+    <!-- Toast messages -->
+    <string name="toast_not_tiktok">Please open TikTok first, then tap the button.</string>
+    <string name="toast_gesture_failed">Gesture failed. Make sure TikTok is playing a video.</string>
+    <string name="toast_button_not_found">Could not find Clear Display. Try tapping again.</string>
+    <string name="toast_clean_mode_triggered">Looking for Clear Display button…</string>
+</resources>

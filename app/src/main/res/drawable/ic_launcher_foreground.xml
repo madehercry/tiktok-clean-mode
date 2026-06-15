@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ic_launcher_foreground.xml
+    ===========================
+    Foreground layer for the adaptive app icon.
+    Canvas is 108x108dp; the system mask shows roughly the centre 66x66dp
+    "safe zone", so the eye/lens shape is sized to stay within it.
+
+    Visual: a white "eye" outline with a hollow pupil that reveals the
+    primary-coloured background beneath — echoing the floating button's
+    "clean view" motif.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Eye / lens outline -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M21,54 C21,54 35,33 54,33 C73,33 87,54 87,54
+                          C87,54 73,75 54,75 C35,75 21,54 21,54 Z"/>
+
+    <!-- Pupil cut-out (matches background colour to create a "ring" effect) -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M54,42 A12,12 0 1,0 54,66 A12,12 0 1,0 54,42 Z"/>
+
+</vector>

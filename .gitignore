@@ -1,0 +1,42 @@
+# ── Build outputs ──────────────────────────────────────────
+*.apk
+*.aar
+*.ap_
+*.dex
+*.class
+
+# ── Gradle ─────────────────────────────────────────────────
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ── Local config ────────────────────────────────────────────
+local.properties
+*.keystore
+*.jks
+google-services.json
+
+# ── IntelliJ / Android Studio ───────────────────────────────
+*.iml
+.idea/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+captures/
+.navigation/
+.externalNativeBuild/
+
+# ── Logs ────────────────────────────────────────────────────
+*.log
+
+# ── macOS ───────────────────────────────────────────────────
+.DS_Store
+
+# ── Windows ─────────────────────────────────────────────────
+Thumbs.db

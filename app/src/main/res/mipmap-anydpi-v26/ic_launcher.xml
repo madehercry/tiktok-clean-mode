@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Adaptive icon definition.
+    Background: solid primary colour (defined in values/colors.xml).
+    Foreground: the eye/lens vector drawable.
+    No PNG assets required — fully vector-based for a clean, scalable icon.
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/primary" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>

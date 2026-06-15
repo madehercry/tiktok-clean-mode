@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    layout_fab.xml
+    ==============
+    The floating trigger button that sits on top of TikTok.
+
+    Design notes:
+    • Root FrameLayout has wrap_content so WindowManager sizes the overlay to
+      exactly the button footprint — touch events outside it pass through to TikTok.
+    • The ImageButton has an oval/circle background that is semi-transparent dark,
+      so it is visible on both light and dark TikTok content.
+    • The eye icon communicates "toggle view mode" clearly.
+    • alpha="0.85" gives a subtle see-through effect in case it overlaps content.
+-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/fab_clean"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:background="@drawable/bg_fab"
+        android:src="@drawable/ic_clean"
+        android:tint="@color/fab_icon"
+        android:padding="15dp"
+        android:scaleType="fitCenter"
+        android:alpha="0.88"
+        android:elevation="8dp"
+        android:contentDescription="@string/fab_description"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</FrameLayout>

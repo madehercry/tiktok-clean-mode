@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 primary tones (purple) -->
+    <color name="primary">#6750A4</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#EADDFF</color>
+    <color name="on_primary_container">#21005D</color>
+
+    <!-- Surface / background -->
+    <color name="surface">#FFFBFE</color>
+    <color name="on_surface">#1C1B1F</color>
+    <color name="on_surface_variant">#49454F</color>
+    <color name="surface_variant">#E7E0EC</color>
+    <color name="outline_variant">#CAC4D0</color>
+    <color name="background">#FFFBFE</color>
+
+    <!-- Semantic -->
+    <color name="success">#386A20</color>
+    <color name="error">#B3261E</color>
+
+    <!-- Floating button overlay -->
+    <!-- CC = 80% opacity; gives a semi-transparent dark pill -->
+    <color name="fab_background">#CC121212</color>
+    <color name="fab_icon">#FFFFFF</color>
+    <color name="fab_stroke">#33FFFFFF</color>
+</resources>

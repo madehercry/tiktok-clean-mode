@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Accessibility Service Configuration
+    ====================================
+    packageNames  — limits event delivery to TikTok variants only, reducing
+                    battery usage vs. listening to ALL apps.
+    canRetrieveWindowContent="true"  — lets us traverse the AccessibilityNodeInfo
+                    tree to locate the "Clear display" button.
+    canPerformGestures="true"        — lets us dispatch a synthetic long-press
+                    gesture that surfaces TikTok's context menu.
+    accessibilityEventTypes          — the exact events we care about:
+                    typeWindowStateChanged  : a new screen / dialog appeared
+                    typeWindowContentChanged: existing content was updated
+    notificationTimeout              — minimum interval (ms) between callbacks.
+-->
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:packageNames="
+        com.zhiliaoapp.musically,
+        com.ss.android.ugc.trill,
+        com.ss.android.ugc.aweme"
+
+    android:accessibilityEventTypes="
+        typeWindowStateChanged|
+        typeWindowContentChanged"
+
+    android:accessibilityFeedbackType="feedbackGeneric"
+
+    android:accessibilityFlags="
+        flagDefault|
+        flagReportViewIds"
+
+    android:canRetrieveWindowContent="true"
+    android:canPerformGestures="true"
+
+    android:notificationTimeout="100"
+
+    android:description="@string/accessibility_service_description" />
