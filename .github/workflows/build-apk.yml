@@ -1,0 +1,40 @@
+name: Build APK
+
+# Runs on every push to main, and can also be triggered manually from the
+# "Actions" tab on GitHub (the workflow_dispatch trigger below).
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      # Provides a Gradle 8.6 binary on PATH — no need for gradlew /
+      # gradle-wrapper.jar to be present in the repo.
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: '8.6'
+
+      - name: Build debug APK
+        run: gradle assembleDebug
+
+      # The finished APK becomes a downloadable artifact on the workflow
+      # run's summary page.
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: tiktok-clean-mode-debug
+          path: app/build/outputs/apk/debug/app-debug.apk
